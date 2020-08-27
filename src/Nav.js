@@ -12,7 +12,7 @@ import Catalog from "./Catalog.js";
 import SignUp from "./SignUp.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+function Nav() {
   return (
     <Router>
       <div className="App">
@@ -22,19 +22,25 @@ function App() {
             <li>
               <a href="/">
                 {" "}
-                <Button href="/">Browse</Button>
+                <Button href="/" color="primary">
+                  Browse
+                </Button>
               </a>{" "}
             </li>
             <li>
               <a href="/">
                 {" "}
-                <Button href="/">Contact</Button>
+                <Button href="/" color="primary">
+                  Contact
+                </Button>
               </a>{" "}
             </li>
             <li>
               <a href="/">
                 {" "}
-                <Button href="/">Request</Button>
+                <Button href="/" color="primary">
+                  Request
+                </Button>
               </a>{" "}
             </li>
           </ul>
@@ -48,18 +54,10 @@ function App() {
           id="land"
           maxWidth="sm"
           styles={{ backgroundImage: `url(${landing})` }}
-        >
-          <h1>Uniquely found.</h1>
-          <h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </h2>
-        </Container>
+        ></Container>
       </div>
     </Router>
   );
 }
 
-export default App;
+export default Nav;

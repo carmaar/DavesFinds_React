@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  background-image: url(./landing.jpeg);
+  background-position-y: 10%;
+  background-position-x: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+body ul,
+body li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body h1 {
+  letter-spacing: 0.2em;
+}
+
+body h2 {
+  font-size: 1em;
+}
+
+body a {
+  color: #363636;
+  text-decoration: none;
+}
+
+body #header {
+  font-family: "Nunito", sans-serif !important;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-transform: uppercase;
+}
+
+body #header h1 {
+  font-family: "Playfair Display", serif;
+}
+
+body #header .MuiSvgIcon-root {
+  padding: 1em;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+body #header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1.5em;
+  color: #363636;
+}
+
+body #header ul li {
+  font-size: 1.3em;
+  margin: 0 2em;
+  color: #363636;
+}
+
+body #land {
+  color: #dfdfdf;
+  min-width: 50%;
+  margin: auto;
+  padding: 7em;
+  background-color: #3636369c;
+  font-family: "Nunito", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

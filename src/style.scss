@@ -1,0 +1,69 @@
+$primary: #ebebeb;
+$darkfont: #363636;
+$lightfont: #dfdfdf;
+
+$primaryfont: "Playfair Display", serif;
+$secondaryfont: "Nunito", sans-serif;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $primaryfont;
+  background-image: url(./landing.jpeg);
+  background-position-y: 10%;
+  background-position-x: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  h1 {
+    letter-spacing: 0.2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  a {
+    color: $darkfont;
+    text-decoration: none;
+  }
+  #header {
+    h1 {
+      font-family: $primaryfont;
+    }
+    font-family: $secondaryfont !important;
+    margin: 0;
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: uppercase;
+    .MuiSvgIcon-root {
+      padding: 1em;
+      width: 1.5em;
+      height: 1.5em;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      padding: 1.5em;
+      color: $darkfont;
+      li {
+        font-size: 1.3em;
+        margin: 0 2em;
+        color: $darkfont;
+      }
+    }
+  }
+  #land {
+    color: $lightfont;
+    min-width: 50%;
+    margin: auto;
+    padding: 7em;
+    background-color: #3636369c;
+    font-family: $secondaryfont;
+  }
+}

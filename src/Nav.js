@@ -8,55 +8,43 @@ import Button from "@material-ui/core/Button";
 // images
 import landing from "./landing.jpeg";
 // pages
+import Home from "./Home.js";
 import Catalog from "./Catalog.js";
 import SignUp from "./SignUp.js";
+import Contact from "./Contact.js";
+
+// react-router
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <Router>
-      <div className="App">
-        <Container id="header" maxWidth="sm">
+    <div className="Nav">
+      <Container id="header" maxWidth="sm">
+        <Link to="/">
           <h1>Dave's Finds</h1>
-          <ul id="nav">
-            <li>
-              <a href="/">
-                {" "}
-                <Button href="/" color="primary">
-                  Browse
-                </Button>
-              </a>{" "}
-            </li>
-            <li>
-              <a href="/">
-                {" "}
-                <Button href="/" color="primary">
-                  Contact
-                </Button>
-              </a>{" "}
-            </li>
-            <li>
-              <a href="/">
-                {" "}
-                <Button href="/" color="primary">
-                  Request
-                </Button>
-              </a>{" "}
-            </li>
-          </ul>
+        </Link>
+        <ul id="nav">
+          <li>
+            <Link to="/Catalog">
+              <Button>Browse</Button>
+            </Link>
+          </li>
+          <li>
+            <Link to="/Contact">
+              <Button>Contact</Button>
+            </Link>
+          </li>
+          <li>
+            <Link to="/SignUp">
+              <Button>Request</Button>
+            </Link>
+          </li>
+        </ul>
 
-          <a href="/">
-            <SearchIcon />
-          </a>
-        </Container>
-
-        <Container
-          id="land"
-          maxWidth="sm"
-          styles={{ backgroundImage: `url(${landing})` }}
-        ></Container>
-      </div>
-    </Router>
+        <SearchIcon />
+      </Container>
+    </div>
   );
 }
 

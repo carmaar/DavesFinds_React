@@ -10,9 +10,9 @@ body {
   padding: 0;
   font-family: $primaryfont;
   background-image: url(./landing.jpeg);
-  background-position-y: 10%;
+  background-position-y: 5%;
   background-position-x: center;
-  background-size: 120%;
+  background-size: 150%;
   background-repeat: no-repeat;
   ul,
   li {
@@ -34,7 +34,11 @@ body {
     h1 {
       font-family: $primaryfont;
     }
-    font-family: $secondaryfont !important;
+    .MuiButton-root {
+      font-family: $secondaryfont;
+      font-size: 0.8em;
+      font-weight: 550;
+    }
     margin: 0;
     display: flex;
     max-width: 100%;
@@ -65,5 +69,18 @@ body {
     padding: 7em;
     background-color: #3636369c;
     font-family: $secondaryfont;
+  }
+  .cardStyle {
+    .MuiTypography-h5 {
+      font-family: $primaryfont;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .MuiTypography-body2 {
+      font-family: $secondaryfont;
+      font-size: 1.5;
+    }
+    max-width: 25%;
+    margin: 1em;
   }
 }

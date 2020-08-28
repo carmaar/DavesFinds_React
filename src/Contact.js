@@ -12,25 +12,18 @@ import Home from "./Home.js";
 import Catalog from "./Catalog.js";
 import SignUp from "./SignUp.js";
 import Nav from "./Nav.js";
-import Contact from "./Contact.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { render } from "@testing-library/react";
 
-function App() {
+function Contact() {
   return (
     <Router>
-      <div className="App">
-        <Nav />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/Catalog" component={Catalog} />
-          <Route path="/Contact" component={Contact} />
-          <Route path="/SignUp" component={SignUp} />
-        </Switch>
+      <div className="Contact">
+        <h1>Contact</h1>
       </div>
     </Router>
   );
 }
 
-export default App;
+export default Contact;
